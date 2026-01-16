@@ -4,11 +4,10 @@
   "title": "Zig365 Woningaanbod Watcher",
   "description": "Haalt actueel woningaanbod op via de publieke Zig365 API en slaat het gestructureerd op.",
   "version": "1.0.0",
-  "usesStandbyMode": false,
+  "usesStandbyMode": true,
   "input": "./input_schema.json",
   "output": "./output_schema.json",
   "storages": {
       "dataset": "./dataset_schema.json"
-  },
-  "dockerfile": "../Dockerfile"
+  }
 }

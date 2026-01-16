@@ -4,12 +4,14 @@
   "schemaVersion": 1,
   "properties": {
     "limit": {
+      "title": "Items per pagina",
       "description": "Items per pagina",
       "type": "integer",
       "default": 15
     },
     "maxPages": {
       "title": "Max pagina's",
+      "description": "Maximum aantal pagina's om te doorlopen",
       "type": "integer",
       "default": 5
     }
