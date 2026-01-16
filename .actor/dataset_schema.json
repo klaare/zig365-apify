@@ -1,23 +1,27 @@
 {
   "actorSpecification": 1,
   "fields": {
-    "id": { "type": "number" },
-    "urlKey": { "type": "string" },
-    "straat": { "type": "string" },
-    "huisnummer": { "type": "string" },
-    "postcode": { "type": "string" },
-    "stad": { "type": "string" },
-    "verhuurder": { "type": "string" },
-    "type": { "type": "string" },
-    "huur": { "type": "number" },
-    "beschikbaarVanaf": { "type": ["string", "null"], "format": "date-time" },
-    "publicatieDatum": { "type": "string", "format": "date-time" },
-    "sluitingsDatum": { "type": "string", "format": "date-time" },
-    "reacties": { "type": "number" },
-    "kanReageren": { "type": "boolean" },
-    "huurtoeslag": { "type": "boolean" },
-    "lat": { "type": ["number", "null"] },
-    "lon": { "type": ["number", "null"] }
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "id": { "type": "number" },
+      "urlKey": { "type": "string" },
+      "straat": { "type": "string" },
+      "huisnummer": { "type": "string" },
+      "postcode": { "type": "string" },
+      "stad": { "type": "string" },
+      "verhuurder": { "type": "string" },
+      "type": { "type": "string" },
+      "huur": { "type": "number" },
+      "beschikbaarVanaf": { "type": ["string", "null"], "format": "date-time" },
+      "publicatieDatum": { "type": "string", "format": "date-time" },
+      "sluitingsDatum": { "type": "string", "format": "date-time" },
+      "reacties": { "type": "number" },
+      "kanReageren": { "type": "boolean" },
+      "huurtoeslag": { "type": "boolean" },
+      "lat": { "type": ["number", "null"] },
+      "lon": { "type": ["number", "null"] }
+    }
   },
   "views": {
     "overview": {
