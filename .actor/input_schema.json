@@ -1,0 +1,17 @@
+{
+  "title": "Zig365 aanbod watcher",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "limit": {
+      "description": "Items per pagina",
+      "type": "integer",
+      "default": 15
+    },
+    "maxPages": {
+      "title": "Max pagina's",
+      "type": "integer",
+      "default": 5
+    }
+  }
+}

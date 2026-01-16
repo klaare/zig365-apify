@@ -1,0 +1,16 @@
+{
+  "actorOutputSchemaVersion": 1,
+  "title": "Zig365 Actor Output",
+  "properties": {
+    "dataset": {
+      "type": "string",
+      "title": "Dataset met woningaanbod",
+      "template": "{{links.apiDefaultDatasetUrl}}/items"
+    },
+    "run": {
+      "type": "string",
+      "title": "Run details",
+      "template": "{{links.consoleRunUrl}}"
+    }
+  }
+}

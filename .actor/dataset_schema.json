@@ -1,0 +1,61 @@
+{
+  "actorSpecification": 1,
+  "fields": {
+    "id": { "type": "number" },
+    "urlKey": { "type": "string" },
+    "straat": { "type": "string" },
+    "huisnummer": { "type": "string" },
+    "postcode": { "type": "string" },
+    "stad": { "type": "string" },
+    "verhuurder": { "type": "string" },
+    "type": { "type": "string" },
+    "huur": { "type": "number" },
+    "beschikbaarVanaf": { "type": ["string", "null"], "format": "date-time" },
+    "publicatieDatum": { "type": "string", "format": "date-time" },
+    "sluitingsDatum": { "type": "string", "format": "date-time" },
+    "reacties": { "type": "number" },
+    "kanReageren": { "type": "boolean" },
+    "huurtoeslag": { "type": "boolean" },
+    "lat": { "type": ["number", "null"] },
+    "lon": { "type": ["number", "null"] }
+  },
+  "views": {
+    "overview": {
+      "title": "Woningaanbod",
+      "transformation": {
+        "fields": [
+          "id",
+          "stad",
+          "straat",
+          "huisnummer",
+          "postcode",
+          "type",
+          "huur",
+          "reacties",
+          "kanReageren",
+          "publicatieDatum",
+          "sluitingsDatum",
+          "verhuurder"
+        ],
+        "desc": true
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "id": { "label": "ID", "format": "number" },
+          "stad": { "label": "Stad", "format": "text" },
+          "straat": { "label": "Straat", "format": "text" },
+          "huisnummer": { "label": "Nr", "format": "text" },
+          "postcode": { "label": "Postcode", "format": "text" },
+          "type": { "label": "Type", "format": "text" },
+          "huur": { "label": "Huur (€)", "format": "number" },
+          "reacties": { "label": "Reacties", "format": "number" },
+          "kanReageren": { "label": "Reageren mogelijk", "format": "boolean" },
+          "publicatieDatum": { "label": "Gepubliceerd", "format": "date" },
+          "sluitingsDatum": { "label": "Sluitingsdatum", "format": "date" },
+          "verhuurder": { "label": "Verhuurder", "format": "text" }
+        }
+      }
+    }
+  }
+}
